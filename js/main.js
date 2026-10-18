@@ -10,6 +10,47 @@ const WHATSAPP_MENSAJE = "Hola El Cuscatleco, quiero hacer un pedido:";
 (function () {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // Menú (definido en js/menu.js)
+  const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const priceHtml = (p) => {
+    const pending = !p || p === "PENDIENTE";
+    return '<span class="price' + (pending ? " pending" : "") + '">' + (pending ? "PENDIENTE" : esc(p)) + "</span>";
+  };
+  const tabsEl = document.getElementById("menuTabs");
+  const panelsEl = document.getElementById("menuPanels");
+  (window.MENU || []).forEach((cat, i) => {
+    const active = i === 0;
+    tabsEl.insertAdjacentHTML(
+      "beforeend",
+      '<button class="tab' + (active ? " is-active" : "") + '" role="tab" id="tab-' + cat.id + '" aria-controls="cat-' + cat.id +
+        '" aria-selected="' + active + '"' + (active ? "" : ' tabindex="-1"') + ">" + esc(cat.nombre) + "</button>"
+    );
+    const conFoto = cat.platos.filter((p) => p.foto);
+    const sinFoto = cat.platos.filter((p) => !p.foto);
+    const nombre = (p) => esc(p.nombre) + (p.detalle ? " <small>(" + esc(p.detalle) + ")</small>" : "");
+    const cards = conFoto
+      .map(
+        (p) =>
+          '<article class="card reveal"><div class="card-img"><img data-foto="' + esc(p.foto) + '" alt="' + esc(p.nombre) +
+          '" loading="lazy"></div><div class="card-body"><div class="card-row"><h3>' + nombre(p) + "</h3>" + priceHtml(p.precio) +
+          "</div>" + (p.desc ? "<p>" + esc(p.desc) + "</p>" : "") + "</div></article>"
+      )
+      .join("");
+    const items = sinFoto
+      .map(
+        (p) =>
+          '<li class="reveal"><div class="row"><span class="name">' + nombre(p) + '</span><span class="leader"></span>' +
+          priceHtml(p.precio) + "</div>" + (p.desc ? "<p>" + esc(p.desc) + "</p>" : "") + "</li>"
+      )
+      .join("");
+    panelsEl.insertAdjacentHTML(
+      "beforeend",
+      '<div class="panel' + (active ? " is-active" : "") + '" id="cat-' + cat.id + '" role="tabpanel" aria-labelledby="tab-' + cat.id + '"' +
+        (active ? "" : " hidden") + ">" + (cat.nota ? '<p class="panel-note">' + esc(cat.nota) + "</p>" : "") +
+        (cards ? '<div class="cards">' + cards + "</div>" : "") + (items ? '<ul class="list">' + items + "</ul>" : "") + "</div>"
+    );
+  });
+
   // Fotos (definidas en images/fotos.js)
   const fotos = window.FOTOS || {};
   document.querySelectorAll("[data-foto]").forEach((img) => {
