@@ -12,7 +12,7 @@ Soy **Denilson Aquino** y hago páginas web para restaurantes latinos.
 
 ## Publicación
 
-- Se publica sola en **Netlify** (https://el-cuscatleco.netlify.app) cada vez que se guarda en la
+- Se publica sola en **Netlify** (https://elcuscatleco-pa.netlify.app) cada vez que se guarda en la
   rama **`main`** de GitHub. No hay que compilar nada.
 - `index.html` está en la raíz del repositorio para que Netlify lo publique directo.
 
