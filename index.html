@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>El Cuscatleco | Pupusería y Restaurante en Upper Darby, PA</title>
+  <meta name="description" content="Pupusas hechas a mano y cocina salvadoreña, hondureña y guatemalteca en Upper Darby, Pensilvania. Ven a comer, llévalo a casa o pide por WhatsApp.">
+  <meta name="theme-color" content="#0B2E6B">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="El Cuscatleco | Pupusería y Restaurante en Upper Darby">
+  <meta property="og:description" content="Pupusas hechas a mano y cocina salvadoreña como en casa.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23F4C542'/%3E%3Cellipse cx='20' cy='21' rx='13' ry='9' fill='%23E9A23B'/%3E%3Ccircle cx='15' cy='19' r='1.6' fill='%237A4B1E'/%3E%3Ccircle cx='23' cy='23' r='1.4' fill='%237A4B1E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="brand" aria-label="El Cuscatleco, ir al inicio">
+      <svg class="brand-mark" viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#F4C542"/>
+        <ellipse cx="20" cy="21" rx="13" ry="9" fill="#E9A23B"/>
+        <circle cx="15" cy="19" r="1.6" fill="#7A4B1E"/>
+        <circle cx="23" cy="23" r="1.4" fill="#7A4B1E"/>
+        <circle cx="25" cy="18" r="1.2" fill="#7A4B1E"/>
+      </svg>
+      <span>El Cuscatleco</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#horario">Horario</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="tel:+14844613156" class="nav-call">Llamar</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== PORTADA ===================== -->
+    <section id="inicio" class="hero">
+      <img class="hero-bg" data-foto="portada" alt="" fetchpriority="high">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="tag reveal">🇸🇻 Pupusería y restaurante · Upper Darby, PA</p>
+        <h1 class="reveal">El Cuscatleco</h1>
+        <p class="hero-phrase reveal">Sabor de <span class="u">El Salvador</span> hecho a mano, como en casa.</p>
+        <p class="lead reveal">Pupusas recién salidas del comal, carne asada, parrillada hondureña y churrasco chapín. Cocina salvadoreña, hondureña y guatemalteca.</p>
+        <div class="hero-ctas reveal">
+          <a href="tel:+14844613156" class="btn btn-corn">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+            Llamar
+          </a>
+          <a href="#" class="btn btn-wa js-whatsapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 32 32" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.2-.5-.2-.7.1l-1 1.3c-.2.2-.4.2-.7 0-.3-.1-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.4-.6v-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6 0-.9.4-.3.3-1.2 1.1-1.2 2.8 0 1.6 1.2 3.2 1.3 3.4.2.2 2.4 3.6 5.7 5 .8.4 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.7-.4Z"/></svg>
+            Pedir por WhatsApp
+          </a>
+        </div>
+        <ul class="flags reveal" aria-label="Cocinas">
+          <li>🇸🇻 Salvadoreña</li>
+          <li>🇭🇳 Hondureña</li>
+          <li>🇬🇹 Guatemalteca</li>
+        </ul>
+      </div>
+      <a href="#menu" class="hero-scroll" aria-label="Ver el menú"><span></span></a>
+    </section>
+
+    <div class="strip" aria-hidden="true">
+      <div class="strip-track">
+        <span>Pupusas</span><i>✦</i><span>Carne asada</span><i>✦</i><span>Parrillada hondureña</span><i>✦</i><span>Pollo con tajadas</span><i>✦</i><span>Churrasco chapín</span><i>✦</i><span>Horchata</span><i>✦</i>
+        <span>Pupusas</span><i>✦</i><span>Carne asada</span><i>✦</i><span>Parrillada hondureña</span><i>✦</i><span>Pollo con tajadas</span><i>✦</i><span>Churrasco chapín</span><i>✦</i><span>Horchata</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ===================== MENÚ ===================== -->
+    <section id="menu" class="section menu">
+      <div class="section-head reveal">
+        <p class="kicker">Nuestro menú</p>
+        <h2>Hecho a mano, servido con cariño</h2>
+        <p>Pupusas, platos típicos y bebidas. Pregunta por los especiales del día.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Categorías del menú">
+        <button class="tab is-active" role="tab" aria-selected="true" aria-controls="cat-pupusas" id="tab-pupusas">Pupusas</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="cat-platos" id="tab-platos" tabindex="-1">Platos típicos</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="cat-sopas" id="tab-sopas" tabindex="-1">Sopas y antojitos</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="cat-bebidas" id="tab-bebidas" tabindex="-1">Bebidas</button>
+      </div>
+
+      <!-- Pupusas -->
+      <div class="panel is-active" id="cat-pupusas" role="tabpanel" aria-labelledby="tab-pupusas">
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="pupusas" alt="Pupusas con queso derretido" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Pupusa revuelta</h3><span class="price">$9.50</span></div>
+              <p>Orden de 3. Chicharrón, frijol y queso, hechas a mano en el comal.</p>
+            </div>
+          </article>
+        </div>
+        <ul class="list">
+          <li class="reveal"><div class="row"><span class="name">Pupusa de chicharrón con queso <small>(orden de 3)</small></span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Chicharrón de cerdo con queso derretido.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Pupusa de frijol con queso <small>(orden de 3)</small></span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Sencilla, calientita y llenadora.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Pupusa de queso</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Puro queso, con curtido y salsa de tomate.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Pupusa de queso con loroco</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>La clásica salvadoreña, con la flor de loroco.</p></li>
+        </ul>
+      </div>
+
+      <!-- Platos típicos -->
+      <div class="panel" id="cat-platos" role="tabpanel" aria-labelledby="tab-platos" hidden>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="carneAsada" alt="Carne asada a la parrilla" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Carne asada</h3><span class="price">$19.00</span></div>
+              <p>Con arroz, frijoles, ensalada y tortillas.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="parrillada" alt="Parrillada de carnes" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Parrillada hondureña</h3><span class="price">$23.50</span></div>
+              <p>Carnes a la parrilla para compartir, con chimol y tajadas.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="polloTajadas" alt="Pollo frito" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Pollo con tajadas</h3><span class="price">$14.00</span></div>
+              <p>Pollo frito sobre tajadas de guineo verde, repollo y aderezo.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="churrasco" alt="Churrasco con papas" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Churrasco guatemalteco</h3><span class="price pending">PENDIENTE</span></div>
+              <p>Carne asada al estilo chapín con chirmol y frijoles.</p>
+            </div>
+          </article>
+        </div>
+        <ul class="list">
+          <li class="reveal"><div class="row"><span class="name">Combo salvadoreño</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Pupusa de frijol con queso, yuca frita, plátanos, tamal de elote, crema, salsa y curtido.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Bistec salvadoreño</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Bistec encebollado al estilo de casa.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Enchiladas de pollo</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Tortilla tostada con pollo, curtido y queso.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Chuletas de cerdo</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Con arroz, frijoles y ensalada.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Camarones</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Preparados a su gusto, con arroz y ensalada.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Pescado frito</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Pescado entero, con arroz, ensalada y tortillas.</p></li>
+        </ul>
+      </div>
+
+      <!-- Sopas y antojitos -->
+      <div class="panel" id="cat-sopas" role="tabpanel" aria-labelledby="tab-sopas" hidden>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="tacos" alt="Tacos con cilantro y limón" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Tacos</h3><span class="price pending">PENDIENTE</span></div>
+              <p>De res, cerdo o pescado, con cilantro, cebolla y limón.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="quesadilla" alt="Quesadilla dorada" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Quesadilla de vegetales</h3><span class="price pending">PENDIENTE</span></div>
+              <p>Tortilla de harina con queso y vegetales.</p>
+            </div>
+          </article>
+        </div>
+        <ul class="list">
+          <li class="reveal"><div class="row"><span class="name">Sopa de mondongo</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Receta tradicional, con verduras y tortillas.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Mariscada</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Sopa de mariscos bien cargada.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Sopa de pollo</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Caldo casero con pollo asado y verduras.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Sopa de res</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Caldo de res con verduras.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Yuca frita</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Con chicharrón o curtido.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Ensalada de aguacate</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Fresca, con aguacate y vegetales.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Ensalada de pollo fajita</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Pollo a la plancha sobre verduras frescas.</p></li>
+        </ul>
+      </div>
+
+      <!-- Bebidas (lista PENDIENTE de confirmar con el restaurante) -->
+      <div class="panel" id="cat-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="frescos" alt="Bebidas naturales de frutas" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Frescos naturales</h3><span class="price pending">PENDIENTE</span></div>
+              <p>Sabores: PENDIENTE.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-img"><img data-foto="refrescos" alt="Refresco con hielo y limón" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Sodas</h3><span class="price pending">PENDIENTE</span></div>
+              <p>Marcas disponibles: PENDIENTE.</p>
+            </div>
+          </article>
+        </div>
+        <ul class="list">
+          <li class="reveal"><div class="row"><span class="name">Horchata</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Descripción: PENDIENTE.</p></li>
+          <li class="reveal"><div class="row"><span class="name">Otras bebidas</span><span class="leader"></span><span class="price pending">PENDIENTE</span></div><p>Lista de bebidas: PENDIENTE.</p></li>
+        </ul>
+      </div>
+
+      <div class="menu-foot reveal">
+        <a href="https://order.online/en-US/store/el-cuscatleco-upper-darby-302107" class="btn btn-outline" target="_blank" rel="noopener">Ver el menú completo y ordenar en línea</a>
+        <p class="fine">Precios sujetos a cambio. Fotos de referencia.</p>
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
+    <section id="nosotros" class="section about">
+      <div class="about-media reveal">
+        <img data-foto="nosotros" alt="Platos típicos servidos en la mesa" loading="lazy">
+        <div class="about-year"><strong>2011</strong><span>sirviendo a la comunidad</span></div>
+      </div>
+      <div class="about-copy">
+        <p class="kicker reveal">Sobre nosotros</p>
+        <h2 class="reveal">Más de diez años alimentando a Upper Darby</h2>
+        <p class="reveal">El Cuscatleco nació para traer a Upper Darby el sabor de nuestra tierra: masa fresca, recetas de familia y porciones generosas.</p>
+        <p class="reveal">Aquí cada pupusa se hace a mano y cada plato se sirve como en casa. Ven a comer con nosotros, llévalo a casa o pídelo a domicilio.</p>
+        <ul class="about-points reveal">
+          <li><span>🫓</span> Pupusas hechas a mano</li>
+          <li><span>👨‍👩‍👧</span> Recetas de familia</li>
+          <li><span>🍽️</span> Porciones generosas</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== HORARIO ===================== -->
+    <section id="horario" class="section hours-wrap">
+      <div class="hours reveal">
+        <p class="kicker">Horario</p>
+        <h2>Te esperamos</h2>
+        <dl class="hours-list" id="hoursList">
+          <div data-days="1"><dt>Lunes</dt><dd>10:00 am – 10:00 pm</dd></div>
+          <div data-days="2"><dt>Martes</dt><dd>10:00 am – 10:00 pm</dd></div>
+          <div data-days="3"><dt>Miércoles</dt><dd>10:00 am – 10:00 pm</dd></div>
+          <div data-days="4"><dt>Jueves</dt><dd>10:00 am – 10:00 pm</dd></div>
+          <div data-days="5"><dt>Viernes</dt><dd>10:00 am – 10:30 pm</dd></div>
+          <div data-days="6"><dt>Sábado</dt><dd class="pending">PENDIENTE</dd></div>
+          <div data-days="0"><dt>Domingo</dt><dd class="pending">PENDIENTE</dd></div>
+        </dl>
+        <p class="fine">Los días festivos el horario puede cambiar. Llámanos para confirmar.</p>
+      </div>
+    </section>
+
+    <!-- ===================== UBICACIÓN ===================== -->
+    <section id="ubicacion" class="section location">
+      <div class="location-info reveal">
+        <p class="kicker kicker-light">Visítanos</p>
+        <h2>29 Garrett Rd<br>Upper Darby, PA 19082</h2>
+        <p class="near">A pasos de la terminal de la 69th Street.</p>
+        <div class="location-ctas">
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=29+Garrett+Rd,+Upper+Darby,+PA+19082" class="btn btn-corn" target="_blank" rel="noopener">Cómo llegar</a>
+          <a href="tel:+14844613156" class="btn btn-ghost">(484) 461-3156</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa de El Cuscatleco en Google Maps" src="https://www.google.com/maps?q=29+Garrett+Rd,+Upper+Darby,+PA+19082&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="foot-brand">
+      <strong>El Cuscatleco</strong>
+      <span>Pupusería y Restaurante</span>
+    </div>
+    <div class="foot-links">
+      <a href="tel:+14844613156">(484) 461-3156</a>
+      <a href="https://www.facebook.com/p/El-Cuscatleco-pupuseria-y-restaurant-100051906105933/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p class="foot-copy">© <span id="year">2026</span> El Cuscatleco · Upper Darby, PA</p>
+  </footer>
+
+  <!-- ===================== BOTÓN FLOTANTE DE WHATSAPP ===================== -->
+  <a href="#" class="wa-float js-whatsapp" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.2-.5-.2-.7.1l-1 1.3c-.2.2-.4.2-.7 0-.3-.1-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.4-.6v-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6 0-.9.4-.3.3-1.2 1.1-1.2 2.8 0 1.6 1.2 3.2 1.3 3.4.2.2 2.4 3.6 5.7 5 .8.4 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.7-.4Z"/></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="images/fotos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
